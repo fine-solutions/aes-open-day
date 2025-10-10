@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Образовательное пространство ПИШ ВГУ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width / initial-scale=1">
+    <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+            --vsu-color: 39 53 105;
+            --color-blue: rgb(var(--vsu-color));
+            --color-tinted: rgba(var(--vsu-color) / 0.7);
+            --text-on-picture-color: rgb(var(--vsu-color));
+            --color-mark: rgb(var(--vsu-color))
+        }
+
+        .slide::after {
+            background-image: url(pictures/ribbon.svg);
+        }
+        
+        .slide h2 {
+            margin: 30px 0 0;
+            color: var(--text-on-picture-color);
+            text-align: left;
+            font-size: 70px;
+        }
+
+        .slide p {
+            margin: 10px 0 0;
+            text-align: left;
+            color: var(--text-on-picture-color);
+            font-style: italic;
+            font-size: 20px;
+        }
+
+        .slide p a {
+            color: var(--text-on-picture-color);
+        }
+
+        .slide .bold {
+            font-weight: bold;
+        }
+
+        .slide .mark {
+            color: var(--color-mark);
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Образовательное пространство ПИШ ВГУ</h1>
+        <p>12 октября 2025 г.</p>
+    </header>
+
+    <section class="slide" id="cover">
+        <h2>Образовательное пространство ПИШ ВГУ</h2>
+        <p>Подробнее на <a href="https://aes.vsu.ru">https://aes.vsu.ru</a></p>
+        <figure>
+            <img class="cover" src="pictures/entrrance.png" alt="Чёрно-белая фотография, на которой небольшая площадь с людьми перед входом в двухэтажное здание со светло-серыми стенами, с большим козырьком.">
+            <figcaption class="copyright right white">
+                <a href="https://andreykolesnikov.com/">© Андрей Колесников и Александр Клюквин</a>
+            </figcaption>
+        </figure>
+        <a class="logo-link" href="https://vsu.ru">
+            <img class="logo-image" src="pictures/vsu.svg" alt="" height="70px">
+        </a>
+        <style>
+            #cover .cover {
+                filter: grayscale(100%);
+                opacity: 0.2;
+            }
+
+            #cover .logo-link {
+                text-decoration: none;
+            }
+
+            #cover .logo-image {
+                position: absolute;
+                bottom: 70px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="people">
+        <h2>Кто выступит сегодня</h2>
+        <p><br><br></p>
+        <div class="columns three">
+            <article>
+                <img src="pictures/uskov.png" alt="">
+                <h3><span class="bold">Усков</span><br>Григорий Константинович</h3>
+                <p>Директор ПИШ ВГУ, д.ф.-м.н., проф.</p>
+            </article>
+            <article>
+                <img src="pictures/stepkin.png" alt="">
+                <h3><span class="bold">Степкин</span><br>Владислав Андреевич</h3>
+                <p>Куратор ООП ИКТиСС, к.ф.-м.н., доц.</p>
+            </article>
+            <article>
+                <img src="pictures/korovchenko.png" alt="">
+                <h3><span class="bold">Коровченко</span><br>Игорь Сергеевич</h3>
+                <p>Куратор ООП ИВТ, к.ф.-м.н., доц.</p>
+            </article>
+        </div>
+        <style>
+            #people h3 {
+                font-size: 18px;
+                margin: 10px 0 0;
+            }
+
+            #people p {
+                font-size: 14px;
+                margin: 5px 0 0;
+            }
+
+            #people h3 .bold {
+                font-size: 22px;
+                text-transform: uppercase;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="modern-1">
+        <h2>Современные технологии</h2>
+        <figure>
+            <img class="cover" src="pictures/facade.png" alt="Небольшая площадь с людьми перед входом в двухэтажное здание со светло-серыми стенами, с большим козырьком внутри жёлто-оранжевого и снаружи сине-фиолетового цвета.">
+            <figcaption class="copyright right white">
+                <a href="https://andreykolesnikov.com/">© Андрей Колесников и Александр Клюквин</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide" id="modern-2">
+        <h2>Высокие технологии</h2>
+        <p></p>
+        <div class="columns three">
+            <h3>Программно-аппаратные платформы</h3>
+            <h3>Материалы, энергетика и космос</h3>
+            <h3>Экология, биотехнологии и медицина</h3>
+            <ul>
+                <li>Информационные технологии</li>
+                <li>Микроэлектроника и вычислительная техника</li>
+                <li>Робототехника</li>
+            </ul>
+            <ul>
+                <li>Космические технологии</li>
+                <li>Атомная энергетика</li>
+                <li>Нанотехнологии</li>
+            </ul>
+            <ul>
+                <li>Биотехнологии</li>
+                <li>Медицинские технологии</li>
+                <li>Экологически чистые технологии</li>
+            </ul>
+        </div>
+        <style>
+            #modern-2 h3 {
+                font-size: 20px;
+            }
+
+            #modern-2 li {
+                font-size: 16px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="modern-3">
+        <h2>Высокие технологии</h2>
+        <p></p>
+        <div class="columns three">
+            <h3>Программно-аппаратные платформы</h3>
+            <h3>Материалы, энергетика и космос</h3>
+            <h3>Экология, биотехнологии и медицина</h3>
+            <ul>
+                <li class="bold mark">Информационные технологии</li>
+                <li class="bold mark">Микроэлектроника и вычислительная техника</li>
+                <li class="bold mark">Робототехника</li>
+            </ul>
+            <ul>
+                <li class="bold mark">Космические технологии</li>
+                <li>Атомная энергетика</li>
+                <li class="bold mark">Нанотехнологии</li>
+            </ul>
+            <ul>
+                <li>Биотехнологии</li>
+                <li>Медицинские технологии</li>
+                <li>Экологически чистые технологии</li>
+            </ul>
+        </div>
+        <style>
+            #modern-3 h3 {
+                font-size: 20px;
+            }
+
+            #modern-3 li {
+                font-size: 16px;
+            }
+
+            #modern-3 li:not(.mark) {
+                color: lightgrey;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="modern-4">
+        <h2>Что требуют работодатели</h2>
+        <ol>
+            <li>Высокий уровень профессиональных компетенций</li>
+            <li>Способность выдержать высокую конкуренцию</li>
+            <li>Активная жизненная позиция и инициативность</li>
+            <li>Способность к постоянному обучению</li>
+            <li>Разносторонние знания и универсальность</li>
+            <li>Гибкость и адаптивность к условиям труда</li>
+            <li>Коммуникабельность и умение работать в команде</li>
+        </ol>
+    </section>
+
+    <section class="slide" id="modern-5">
+        <h2>Кто сможет работать</h2>
+        <p>ПИШ ВГУ — образовательный проект, направленный на подготовку инженеров нового поколения, способных создавать и внедрять современные технологии в различных сферах деятельности.</p>
+        <p></p>
+        <div class="columns two">
+            <ul>
+                <li>Проектная деятельность</li>
+                <li>Стажировки и практика</li>
+                <li>Развитое сообщество</li>
+            </ul>
+            <ul>
+                <li>Современные лаборатории</li>
+                <li>Университетское образование</li>
+                <li>Инженерная мышление</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide" id="science-1">
+        <h2>Наука</h2>
+        <figure>
+            <img class="cover" src="pictures/drone.png" alt="Небольшой уютный холл с молодыми людьми, в центре которого на постаменте установлен квадрокоптер, а по бокам цветные лестницы.">
+            <figcaption class="copyright right white">
+                <a href="https://andreykolesnikov.com/">© Андрей Колесников и Александр Клюквин</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide" id="science-2">
+        <h2>Новый технологический уклад</h2>
+        <p></p>
+        <ol>
+            <li>Нейросети для классификации и обобщения информации</li>
+            <li>Робототехника и беспилотный транспорт</li>
+            <li>Автоматизированное хранение и логистика</li>
+            <li>Автоматизация во всех сферах нашей жизни?</li>
+        </ol>
+    </section>
+
+    <section class="slide" id="science-3">
+        <h2>Новый технологический уклад</h2>
+        <p></p>
+        <ol>
+            <li>Нейросети для классификации и обобщения информации</li>
+            <li>Робототехника и беспилотный транспорт</li>
+            <li class="mark bold">Автоматизированное хранение и логистика</li>
+            <li>Автоматизация во всех сферах нашей жизни?</li>
+        </ol>
+        <style>
+            #science-3 li:not(.mark) {
+                color: lightgrey;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="science-4">
+        <h2>Новый технологический уклад</h2>
+        <p></p>
+        <ol>
+            <li>Нейросети для классификации и обобщения информации</li>
+            <li>Робототехника и беспилотный транспорт</li>
+            <li>Автоматизированное хранение и логистика</li>
+            <li class="mark bold">Автоматизация во всех сферах нашей жизни?</li>
+        </ol>
+        <style>
+            #science-4 li:not(.mark) {
+                color: lightgrey;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="science-5">
+        <h2>Ближайшие 10 лет</h2>
+        <p></p>
+        <ul>
+            <li>Передовые технологии проектирования и создания продукции</li>
+            <li>Экологически чистая и ресурсосберегающая энергетика</li>
+            <li>Развитие интеллектуальных транспортных, энергетических и телекоммуникационных систем</li>
+        </ul>
+    </section>
+
+    <section class="slide" id="science-6">
+        <!-- Create your first slide -->
+    </section>
+
+    <section class="slide" id="education-1">
+        <h2>Образование</h2>
+        <figure>
+            <img class="cover" src="pictures/hall.png" alt="Холл, залитый солнечным светом, с цветными лестницами по бокам и большими окнами, в котором царит атмосфера уюта и творчества.">
+            <figcaption class="copyright right white">
+                <a href="https://andreykolesnikov.com/">© Андрей Колесников и Александр Клюквин</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide" id="education-2">
+        <h2>Фундаментальная подготовка</h2>
+        <p></p>
+        <div class="columns three">
+            <p>В аудиториях</p>
+            <p>Вне аудиторий</p>
+            <p>Вне университета</p>
+            <ul>
+                <li>Лекции</li>
+                <li>Лабораторные</li>
+                <li>Практические</li>
+                <li>Семинары</li>
+                <li>Курсовые</li>
+                <li>Практики</li>
+            </ul>
+            <ul>
+                <li>Стажировки</li>
+                <li>Проекты</li>
+                <li>Сертификаты</li>
+                <li>ДПО</li>
+                <li>Наука</li>
+                <li>Актив</li>
+            </ul>
+            <ul>
+                <li>Работа</li>
+                <li>Общение</li>
+                <li>Школа</li>
+                <li>Инженерия</li>
+                <li>Турниры</li>
+                <li>Поездки</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide" id="education-3">
+        <h2>Инженерное мышление</h2>
+        <p></p>
+        <div class="columns three">
+            <p>Структура</p>
+            <p>Ограничения</p>
+            <p>Компромиссы</p>
+            <ul>
+                <li>Системный анализ</li>
+                <li>Математический аппарат</li>
+                <li>Критическое мышление</li>
+            </ul>
+            <ul>
+                <li>Искусство пренебречь</li>
+                <li>Опыт моделирования</li>
+                <li>Знание стандартов</li>
+            </ul>
+            <ul>
+                <li>Понимание потребностей</li>
+                <li>Понимание возможностей</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide" id="education-4">
+        <h2>Личностный рост</h2>
+        <p></p>
+        <div class="columns three">
+            <p>Организация деятельности</p>
+            <p>Формирование любопытства</p>
+            <p>Опытные и эрудированные коллеги</p>
+            <ul>
+                <li>Навыки планирования</li>
+                <li>Навыки ведения деятельности</li>
+            </ul>
+            <ul>
+                <li>Устойчивый интерес</li>
+                <li>Постоянное обучение</li>
+                <li>Конвергенция наук</li>
+            </ul>
+            <ul>
+                <li>Понимание людей</li>
+                <li>Работа в команде</li>
+                <li>Профессиональное сообщество</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide" id="education-5">
+        <h2>Обновление программ</h2>
+        <p></p>
+        <ul>
+            <li>Появление нового в науке или в практике</li>
+            <li>Формирование востребованной компетенции</li>
+            <li>Актуализация образовательной программы</li>
+            <li>Внедрение в обучение</li>
+        </ul>
+    </section>
+
+    <section class="slide" id="education-6">
+        <h2>Бакалавриат</h2>
+        <p></p>
+        <table>
+            <tbody>
+                <tr>
+                    <th scope="col">Направление подготовки / Экзамены</th>
+                    <th>Рус.&nbsp;Яз.</th>
+                    <th style="text-decoration: underline;">Мат.</th>
+                    <th>Физ.</th>
+                    <th>Инф.</th>
+                </tr>
+                <tr>
+                    <th class="mark">Информатика и вычислительная техника</th>
+                    <td>+</td>
+                    <td>+</td>
+                    <td>+</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <th class="mark">Инфокоммуникационные технологии и системы связи</th>
+                    <td>+</td>
+                    <td>+</td>
+                    <td>+</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <th class="mark">Радиофизика</th>
+                    <td>+</td>
+                    <td>+</td>
+                    <td>+</td>
+                    <td>–</td>
+                </tr>
+                <tr>
+                    <th class="mark">Мехатроника и робототехника</th>
+                    <td>+</td>
+                    <td>+</td>
+                    <td>+</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <th class="mark">Информационные системы и технологии</th>
+                    <td>+</td>
+                    <td>+</td>
+                    <td>+</td>
+                    <td>+</td>
+                </tr>
+            </tbody>
+        </table>
+        <style>
+            #education-6 th {
+                font-size: 22px;
+            }
+
+            #education-6 tr:first-child th {
+                text-align: center;
+            }
+
+            #education-6 tr:first-child th:first-child {
+                text-align: left;
+            }
+
+            #education-6 td {
+                font-size: 22px;
+                text-align: center;
+                width: 70px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="education-7">
+        <h2>Бакалавриат</h2>
+        <p></p>
+        <table>
+            <tbody>
+                <tr>
+                    <th scope="col">Направление подготовки / Доля в проф. комп.</th>
+                    <th>Инж.</th>
+                    <th>Мат.</th>
+                    <th>Физ.</th>
+                    <th>Инф.</th>
+                </tr>
+                <tr>
+                    <th class="mark">Информатика и вычислительная техника</th>
+                    <td>50%</td>
+                    <td>20%</td>
+                    <td>10%</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <th class="mark">Инфокоммуникационные технологии и системы связи</th>
+                    <td>40%</td>
+                    <td>20%</td>
+                    <td>20%</td>
+                    <td>20%</td>
+                </tr>
+                <tr>
+                    <th class="mark">Радиофизика</th>
+                    <td>25%</td>
+                    <td>20%</td>
+                    <td>45%</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <th class="mark">Мехатроника и робототехника</th>
+                    <td colspan="4">Подробнее в 12:00</td>
+                </tr>
+                <tr>
+                    <th class="mark">Информационные системы и технологии</th>
+                    <td colspan="4">Подробнее в 14:00</td>
+                </tr>
+            </tbody>
+        </table>
+        <style>
+            #education-7 th {
+                font-size: 22px;
+            }
+
+            #education-7 tr:first-child th {
+                text-align: center;
+            }
+
+            #education-7 tr:first-child th:first-child {
+                text-align: left;
+            }
+
+            #education-7 td {
+                font-size: 22px;
+                text-align: center;
+                width: 70px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="education-8">
+        <h2>Бакалавриат</h2>
+        <p></p>
+        <table>
+            <tbody>
+                <tr>
+                    <th scope="col">Направление подготовки / КЦП</th>
+                    <th>2022</th>
+                    <th>2023</th>
+                    <th>2024</th>
+                    <th>2025</th>
+                </tr>
+                <tr>
+                    <th class="mark">Информатика и вычислительная техника</th>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>38</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <th class="mark">Инфокоммуникационные технологии и системы связи</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <th class="mark">Радиофизика</th>
+                    <td>80</td>
+                    <td>75</td>
+                    <td>52</td>
+                    <td>42</td>
+                </tr>
+                <tr>
+                    <th class="mark">Мехатроника и робототехника</th>
+                    <td colspan="4">Подробнее в 12:00</td>
+                </tr>
+                <tr>
+                    <th class="mark">Информационные системы и технологии</th>
+                    <td colspan="4">Подробнее в 14:00</td>
+                </tr>
+            </tbody>
+        </table>
+        <style>
+            #education-8 th {
+                font-size: 22px;
+            }
+
+            #education-8 tr:first-child th {
+                text-align: center;
+            }
+
+            #education-8 tr:first-child th:first-child {
+                text-align: left;
+            }
+
+            #education-8 td {
+                font-size: 22px;
+                text-align: center;
+                width: 70px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="education-9">
+        <h2>Бакалавриат</h2>
+        <p></p>
+        <table>
+            <tbody>
+                <tr>
+                    <th scope="col">Направление подготовки / Проходные баллы</th>
+                    <th>2022</th>
+                    <th>2023</th>
+                    <th>2024</th>
+                    <th>2025</th>
+                </tr>
+                <tr>
+                    <th class="mark">Информатика и вычислительная техника</th>
+                    <td>213</td>
+                    <td>169</td>
+                    <td>186</td>
+                    <td>167</td>
+                </tr>
+                <tr>
+                    <th class="mark">Инфокоммуникационные технологии и системы связи</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>164</td>
+                </tr>
+                <tr>
+                    <th class="mark">Радиофизика</th>
+                    <td>135</td>
+                    <td>127</td>
+                    <td>143</td>
+                    <td>125</td>
+                </tr>
+                <tr>
+                    <th class="mark">Мехатроника и робототехника</th>
+                    <td colspan="4">Подробнее в 12:00</td>
+                </tr>
+                <tr>
+                    <th class="mark">Информационные системы и технологии</th>
+                    <td colspan="4">Подробнее в 14:00</td>
+                </tr>
+            </tbody>
+        </table>
+        <style>
+            #education-9 th {
+                font-size: 22px;
+            }
+
+            #education-9 tr:first-child th {
+                text-align: center;
+            }
+
+            #education-9 tr:first-child th:first-child {
+                text-align: left;
+            }
+
+            #education-9 td {
+                font-size: 22px;
+                text-align: center;
+                width: 70px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="education-cover-1">
+        <h2>Информатика и вычислительная техника</h2>
+        <figure>
+            <img class="cover" src="pictures/computers.png" alt="">
+            <figcaption class="copyright right white">
+                <a href="https://andreykolesnikov.com/">© Андрей Колесников и Александр Клюквин</a>
+            </figcaption>
+        </figure>
+        <style>
+            #education-cover-1 .cover {
+                opacity: 0.3;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="education-10">
+        <h2>Образовательная программа</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td class="fill fill--first" colspan="6">
+                        Математический анализ / Аналитическая геометрия и линейная алгебра / Дискретная математика / Математическая логика и теория алгоритмов / Дифференциальные и интегральные уравнения / Теория вероятностей и случайные процессы / Математическое моделирование / Математическая статистика / Методы оптимизации / Начертательная геометрия
+                    </td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td class="fill fill--second" colspan="4">Физика</td>
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="fill fill--third" colspan="7">
+                        Интерфейсы периферийных устройств / Аппаратные платформы инфокоммуникационных систем / Программирование / Инженерная графика / Документационное обеспечение профессиональной деятельности / Основы теории передачи информации
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td class="fill fill--fourth" colspan="6">
+                        Электротехника / электроника и схемотехника / Операционные системы / Сети и телекоммуникации / Базы данных / Защита информации / Прикладное программирование / Обработка видеоинформации / Программно-аппаратное обеспечение Интернета вещей / Компьютерные методы обработки изображений / Администрирование инфокоммуникационных систем / Теория графов и ее приложения / Искусственные нейронные сети / Теория систем телекоммуникаций / Большие данные в инфокоммуникационных системах / Тестирование программного обеспечения / Экспертные системы
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <style>
+            #education-10 tr:first-child td {
+                width: 100px;
+            }
+
+            #education-10 .fill {
+                font-size: 11px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            #education-10 .fill--first { background-color: rgba(var(--vsu-color) / 0.2); }
+            #education-10 .fill--second { background-color: rgba(var(--vsu-color) / 0.4); }
+            #education-10 .fill--third { background-color: rgba(var(--vsu-color) / 0.6); }
+            #education-10 .fill--fourth { background-color: rgba(var(--vsu-color) / 0.8); padding-left: 20px; }
+        </style>
+    </section>
+
+    <section class="slide" id="education-cover-2">
+        <h2>Инфокоммуникационные технологии и системы связи</h2>
+        <figure>
+            <img class="cover" src="pictures/lection.png" alt="">
+            <figcaption class="copyright right white">
+                <a href="https://andreykolesnikov.com/">© Андрей Колесников и Александр Клюквин</a>
+            </figcaption>
+        </figure>
+        <style>
+            #education-cover-2 .cover {
+                opacity: 0.3;
+            }
+        </style>
+    </section>
+    
+    <section class="slide" id="education-11">
+        <h2>Образовательная программа</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td class="fill fill--first" colspan="8">
+                        Математический анализ / Аналитическая геометрия и линейная алгебра / Дискретная математика / Математическая логика и теория алгоритмовДифференциальные и интегральные уравнения / Теория вероятностей и математическая статистика / Математическое моделирование / Математическая статистика / Методы оптимизации / Введение в имитационное моделирование
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fill fill--second" colspan="7">
+                        Физика / Электродинамика и распространение радиоволн / Атомная физика и введение в физику твердого тела / Физика полупроводниковых приборов / Радиофизический эксперимент и обработка экспериментальных данных / Физические и технические измерения
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="fill fill--third" colspan="7">
+                        Информационные технологии / Программно-аппаратные средства и интерфейсы инфокоммуникационных систем / Программирование / Основы теории информации и передачи сигналов / Защита информации / Большие данные в инфокоммуникационных системах / Машинное обучение и искусственные нейронные сети
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td class="fill fill--fourth" colspan="5">
+                        Сети и телекоммуникации / Теоретические основы радиотехники / Радиотехнические цепи и сигналы / Цифровая обработка сигналов / Статистическая теория связи / Развитие систем связи (введение в профессию) / Встраиваемые системы / Электротехника / Администрирование инфокоммуникационных систем / Электроника / Схемотехника телекоммуникационных устройств / Теория систем / Беспроводные системы связи / Основы мобильной связи
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <style>
+            #education-11 tr:first-child td {
+                width: 100px;
+            }
+
+            #education-11 .fill {
+                font-size: 11px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            #education-11 .fill--first { background-color: rgba(var(--vsu-color) / 0.2); }
+            #education-11 .fill--second { background-color: rgba(var(--vsu-color) / 0.4); }
+            #education-11 .fill--third { background-color: rgba(var(--vsu-color) / 0.6); }
+            #education-11 .fill--fourth { background-color: rgba(var(--vsu-color) / 0.8); padding-left: 20px; }
+        </style>
+    </section>
+
+    <section class="slide" id="education-cover-3">
+        <h2>Радиофизика</h2>
+        <figure>
+            <img class="cover" src="pictures/openspace.png" alt="">
+            <figcaption class="copyright right white">
+                <a href="https://andreykolesnikov.com/">© Андрей Колесников и Александр Клюквин</a>
+            </figcaption>
+        </figure>
+        <style>
+            #education-cover-3 .cover {
+                opacity: 0.3;
+            }
+        </style>
+    </section>
+    
+    <section class="slide" id="education-12">
+        <h2>Образовательная программа</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td class="fill fill--first" colspan="5">
+                        Математический анализ / Аналитическая геометрия и линейная алгебра / Дифференциальные уравнения / Теория вероятностей и математическая статистика / Теория функций комплексного переменного / Методы математической физики / Численные методы и математическое моделирование
+                    </td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <td class="fill fill--second" colspan="7">
+                        Механика / Молекулярная физика / Электричество и магнетизм / Колебания и волны / оптика / Атомная физика / Основы атомного спектрального анализа / Ядерная физика / Астрофизика / Физика полупроводников / Теоретическая механика / Электродинамика / Квантовая механика / Термодинамика и статистическая физика / Теория колебаний / Статистическая радиофизика
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="fill fill--third" colspan="2">
+                        Прикладное программное обеспечение / Алгоритмы и языки программирования
+                    </td>
+                    <td class="fill fill--fourth" colspan="6">
+                        Основы научных исследований в радиофизике / Программно-аппаратное обеспечение Интернета вещей / Направляющие системы СВЧ / Теоретические основы радиотехники / Цифровая компонентная база инфокоммуникационных систем / Радиотехнические цепи и сигналы / Радиоэлектроника / Радиоприемные устройства / Распространение радиоволн / Физика волновых процессов / Цифровая обработка сигналов / Беспроводные инфокоммуникационные системы / Анализ и моделирование радиоэлектронных схем / Имитационное моделирование инфокоммуникационных систем
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <style>
+            #education-12 tr:first-child td {
+                width: 100px;
+            }
+
+            #education-12 .fill {
+                font-size: 11px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            #education-12 .fill--first { background-color: rgba(var(--vsu-color) / 0.2); }
+            #education-12 .fill--second { background-color: rgba(var(--vsu-color) / 0.4); }
+            #education-12 .fill--third { background-color: rgba(var(--vsu-color) / 0.6); }
+            #education-12 .fill--fourth { background-color: rgba(var(--vsu-color) / 0.8); padding-left: 20px; }
+        </style>
+    </section>
+
+    <section class="slide" id="education-">
+        <h2>Магистратура</h2>
+        <p></p>
+        <table>
+            <tbody>
+                <tr>
+                    <th scope="col">Направление подготовки</th>
+                </tr>
+                <tr>
+                    <th class="mark">Информатика и вычислительная техника</th>
+                </tr>
+                <tr>
+                    <th class="mark">Инфокоммуникационные технологии и системы связи</th>
+                </tr>
+                <tr>
+                    <th class="mark">Радиофизика (2)</th>
+                </tr>
+                <tr>
+                    <th class="mark">Фотоника и оптоинформатика</th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="slide" id="graduates-1">
+        <h2>Выпускники</h2>
+        <figure>
+            <img class="cover" src="pictures/storage.png" alt="Светлый холл со шкафчиками для студентов и человеком, идущим сквозь него.">
+            <figcaption class="copyright right white">
+                <a href="https://andreykolesnikov.com/">© Андрей Колесников и Александр Клюквин</a>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="slide" id="final-1">
+        <h2>Контакты</h2>
+        <p></p>
+        <div class="columns two">
+            <article>
+                <img src="pictures/stepkin-qr.png" alt="" height="120">
+                <h3>Степкин<br>Владислав<br>Андреевич</h3>
+                <p><a href="tel:+79204694530">+7 (920) 469-45-30</a><br><a href="mailto:stepkin@phys.vsu.ru">stepkin@phys.vsu.ru</a></p>
+            </article>
+            <article>
+                <img src="pictures/korovchenko-qr.png" alt="" height="120">
+                <h3>Коровченко<br>Игорь<br>Сергеевич</h3>
+                <p><a href="tel:+79042121307">+7 (904) 212-13-07</a><br><a href="mailto:korovchenko@phys.vsu.ru">korovchenko@phys.vsu.ru</a></p>
+            </article>
+        </div>
+        <style>
+            #final-1 article {
+                display: grid;
+                grid-template: "qr info" "qr links";
+                grid-template-columns: min-content 1fr;
+                gap: 10px;
+            }
+
+            #final-1 article > img {
+                grid-area: qr;
+                padding: 15px;
+            }
+
+            #final-1 article > h3 {
+                grid-area: info;
+                margin: 0;
+                padding: 0;
+            }
+
+            #final-1 article > p {
+                grid-area: links;
+            }
+        </style>
+    </section>
+
+    <footer class="badge">
+        <a href="https://github.com/fine-solutions/aes-open-day">Исходный код</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="node_modules/@shower/core/dist/shower.js"></script>
+    <!-- Copyright © 2025 ПИШ ВГУ -->
+
+</body>
+</html>
