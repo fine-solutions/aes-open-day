@@ -993,39 +993,44 @@
     <section class="slide" id="final-2">
         <h2>Информация</h2>
         <p></p>
-        <div class="columns two">
+        <div class="columns three">
             <article>
-                <img src="pictures/aes-qr.svg" alt="" height="120">
-                <h3>Официальный&nbsp;сайт ПИШ ВГУ</h3>
-                <p><a href="https://aes.vsu.ru">https://aes.vsu.ru</a></p>
+                <img src="pictures/aes-qr.svg" alt="">
             </article>
             <article>
-                <img src="pictures/abitur-qr.svg" alt="" height="120">
-                <h3>Приёмная комиссия&nbsp;ВГУ</h3>
-                <p><a href="http://abitur.vsu.ru">http://abitur.vsu.ru</a></p>
+                <img src="pictures/abitur-qr.svg" alt="">
+            </article>
+            <article>
+                <img src="pictures/this-qr.svg" alt="">
             </article>
         </div>
         <style>
             #final-2 article {
                 display: grid;
-                grid-template: "qr info" "qr links";
-                grid-template-columns: min-content 1fr;
-                gap: 10px;
+                grid-template: "qr" "info";
+                grid-template-columns: 1fr;
+                justify-content: center;
+                align-items: center;
             }
 
-            #final-2 article > img {
+            #final-2 img {
                 grid-area: qr;
                 padding: 15px;
+                width: 180px;
             }
 
-            #final-1 article > h3 {
+            #final-2 h3 {
                 grid-area: info;
-                margin: 0;
-                padding: 0;
+                margin-block-start: 0px;
+                margin-block-end: 0px;
+                font-size: 1.15em;
+                line-height: 1.25;
+                width: min-content;
             }
-
-            #final-1 article > p {
-                grid-area: links;
+            
+            #final-2 a {
+                width: min-content;
+                text-decoration: none;
             }
         </style>
     </section>
