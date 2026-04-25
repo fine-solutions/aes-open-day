@@ -9,7 +9,7 @@
   },
   "files": [
     "index.html",
-    "images",
+    "pictures",
     "node_modules/@shower"
   ],
   "devDependencies": {
