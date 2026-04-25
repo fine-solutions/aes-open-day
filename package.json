@@ -7,7 +7,16 @@
     "bundle": "shower bundle",
     "publish": "shower publish"
   },
+  "files": [
+    "index.html",
+    "images",
+    "node_modules/@shower"
+  ],
   "devDependencies": {
     "@shower/cli": "^1.1.0"
+  },
+  "dependencies": {
+    "@shower/core": "^3.5.1",
+    "@shower/ribbon": "^4.2.0"
   }
 }
