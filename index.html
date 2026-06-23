@@ -8,11 +8,10 @@
     <style>
         .shower {
             --slide-ratio: calc(16 / 9);
-            --vsu-color: 39 53 105;
-            --color-blue: rgb(var(--vsu-color));
-            --color-tinted: rgba(var(--vsu-color) / 0.7);
-            --text-on-picture-color: rgb(var(--vsu-color));
-            --color-mark: rgb(var(--vsu-color))
+            --color-blue: #071D49;
+            --color-tinted: #0C2D83;
+            --text-on-picture-color: var(--color-blue);
+            --color-mark: var(--color-blue)
         }
 
         .slide::after {
@@ -76,27 +75,27 @@
                 <a href="https://andreykolesnikov.com/">© Андрей Колесников и Александр Клюквин</a>
             </figcaption>
         </figure>
-        <a class="logo-link" href="https://vsu.ru" title="Официальный сайт ФГБОУ ВО «ВГУ»">
-            <img class="logo-image" src="pictures/vsu.svg" alt="" height="70px">
-        </a>
+        <div class="logo-image">
+            <img class="logo-icon" src="pictures/vsu.svg" alt="" height="50px">
+            <img class="logo-icon" src="pictures/aes.svg" alt="" height="50px">
+        </div>
         <style>
             #cover .cover {
                 filter: grayscale(100%) opacity(0.2);
             }
 
-            #cover .logo-link {
-                text-decoration: none;
-            }
-
             #cover .logo-image {
                 position: absolute;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
                 bottom: 70px;
             }
         </style>
     </section>
 
     <section class="slide" id="people">
-        <h2>Кто выступит сегодня</h2>
+        <h2>Руководство</h2>
         <p><br><br></p>
         <div class="columns three">
             <article>
